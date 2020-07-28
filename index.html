@@ -3,17 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
     <title>Homepage</title>
 </head>
 <body>
     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+              aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+          
+              </ul>
+              </div>
+            </div>
+            <div id="intro" class="view">
 
+                <div class="mask">
+              
+                </div>
+              
+              </div>
+          </nav>
+          <div style="height: 100vh">
+            <div class="flex-center flex-column">
+              <h1 class="animated fadeIn mb-2">Card Games</h1>
+        
+              <h5 class="animated fadeIn mb-1">Created by Josh Taylor</h5>
+        
+              <p class="animated fadeIn text-muted">Web Programming Summer 2020</p>
+            </div>
+          </div>
     </header>
-    <main>
 
+    <main>
+        <form class="text-center border border-light p-5" action="#!">
+            <p class="h4 mb-4">Sign in</p>
+            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+            <div class="d-flex justify-content-around">
+                <div>
+                    <!-- Remember me -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                        <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+        
+            <p>Not a member?
+                <a href="">Register</a>
+            </p>
+        </form>
+        <form class="text-center border border-light p-5" action="#!">
+            <p class="h4 mb-4">Sign up</p>
+            <div class="form-row mb-4">
+                <div class="col">
+                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+            <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                At least 8 characters and 1 digit
+            </small>
+            <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+            <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+ 
+            <hr>     
+        </form>
     </main>
     <footer>
         
     </footer>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 </html>
