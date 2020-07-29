@@ -4,23 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\highStyle.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/1f93991fe4.js" crossorigin="anonymous"></script>
     <title>High Card</title>
 </head>
+
 <body>
-    <div class="container">
-        <h1>High vs Low Game</h1>
-        <div id="message">Rules : Select either Hi or Low for the next card. Guess the value of the down facing card verses the up facing card. Place your bet depending on how confident you are about your choice of hi or low on the next card.</div>
-        <div id="start">
-            <button id="btnstart" type="button" onclick="gameStart()" class="btn">Start Game</button>
+         <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+    <div class="container"><a class="navbar-brand js-scroll-trigger" href="index.html">Card Games</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#register-form">Register</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#login-form">Login</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#contact">Games</a></li>
+                </ul>
+            </div>
         </div>
-        <div id="score"></div>
+    </nav>
+    <header class="masthead  text-black-50 text-center">
+        <div class="container ">
+            <h1>High Vs. Low</h1>
+            <hr>
+
+        </div>
+    </header>
+    <div class="container" text-center>
+        <div id="message">Rules : Select either Hi or Low for the next card. Guess the value of the down facing card verses the up facing card. Place your bet depending on how confident you are about your choice of hi or low on the next card.</div>
+        <div id="score">
+            <div>Total $<span id="dollars">100</span> Bet Amount :
+                <input type="number" id="myBet" value="0" min="1" max="100"> </div>
+        </div>
         <div id="cards"></div>
         <div id="highLow">
-            <button id="btnhigh" type="button" onclick="hilo('high')" class="btn">High</button>
-            <br>
-            <button id="btnlow" type="button" onclick="hilo('low')" class="btn">Low</button>
+            <button id="btnhigh" type="button" onclick="hilo('high')" class="btn-game">High</button>
+            <button id="btnlow" type="button" onclick="hilo('low')" class="btn-game">Low</button>
+        </div>
+        <div id="start">
+            <button id="btnstart" type="button" onclick="gameStart()" class="btn-game">Start Game</button>
         </div>
     </div>
     <script src="js\highCard.js"></script>
 </body>
+
 </html>
