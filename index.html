@@ -14,46 +14,48 @@
     <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
 </head>
 
-<body id="page-top">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Card Games</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+<body id="page-top">   
+     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+    <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Card Games</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Games</a></li>
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">ABOUT ME</a></li>
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">NOT SURE</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#register-form">Register</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#login-form">Login</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Games</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <header class="masthead bg-primary text-white text-center" style="background-color: rgb(155,193,185);">
-        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/portfolio/game.png">
+        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets\img\dogpoker.jpg">
             <h1>Josh Taylor</h1>
             <hr class="star-light">
             <h2 class="font-weight-light mb-0">Web Programming - Summer 2020 - 001 89 7831</h2>
         </div>
     </header>
     <div class="login-clean">
-        <form method="post">
+        <form method="post" id="login-form">
             <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><i class="icon ion-ios-navigate"></i></div>
-            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+            <div class="illustration"><img src="assets\img\login-48.png" alt="Login"></div>
+            <div class="form-group"><input class="form-control" type="username" name="username" placeholder="Username"></div>
             <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div><a class="forgot" href="#">Forgot your email or password?</a></form>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div>
+        </form>
     </div>
     <div class="register-photo">
         <div class="form-container">
             <div class="image-holder"></div>
-            <form method="post">
-                <h2 class="text-center"><strong>Create</strong> an account.</h2>
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+            <form method="post" id="register-form">
+                <h2 class="text-center"><strong>Create</strong> a username</h2>
+                <div class="form-group"><input class="form-control" type="username" name="username" placeholder="Username"></div>
                 <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
                 <div class="form-group"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div>
                 <div class="form-group">
-                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div>
+                    
                 </div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button></div><a class="already" href="#">You already have an account? Login here.</a></form>
+                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button></div>
+            </form>
         </div>
     </div>
     <section id="portfolio" class="portfolio">
@@ -64,38 +66,20 @@
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/cabin.png"></a>
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa  fa-3x">High Card</i></div>
+                        </div><img class="img-fluid" src="assets\img\icons8-ace-of-hearts-400.png"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/cake.png"></a>
+                        </div><img class="img-fluid" src="assets\img\ace-hearts.png"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
                         </div><img class="img-fluid" src="assets/img/portfolio/circus.png"></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-4">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/game.png"></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-5">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/safe.png"></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-6">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/submarine.png"></a>
                 </div>
             </div>
         </div>
@@ -158,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Play Game</a></div>
             </div>
         </div>
     </div>
