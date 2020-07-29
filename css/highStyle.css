@@ -1,0 +1,17 @@
+#start {
+    margin-top: 20px;
+}
+
+#highLow {
+    display: none;
+}
+
+.icard {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#cards {
+    margin-top: 30px;
+    height: 60px;
+}
