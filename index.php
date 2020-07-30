@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php 
+use Phppot\Member;
+
+session_start();
+?>
 <html>
 
 <head>
@@ -13,9 +17,13 @@
     <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
     <script src="https://kit.fontawesome.com/1f93991fe4.js" crossorigin="anonymous"></script>
+    <link href="assets\css\phppot-style.css" type="text/css"	rel="stylesheet" />
+<link href="assets\css\user-registration.css" type="text/css"
+	rel="stylesheet" />
+<script src="jquery\jquery-3.3.1.js" type="text/javascript"></script>
 </head>
 
-<body id="page-top">   
+<body id="page-top">  
      <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
     <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Card Games</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive"
             aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
@@ -23,7 +31,7 @@
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#register-form">Register</a></li>
                     <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#login-form">Login</a></li>
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Games</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Games</a></li>
                 </ul>
             </div>
         </div>
@@ -35,29 +43,11 @@
             <h2 class="font-weight-light mb-0">Web Programming - Summer 2020 - 001 89 7831</h2>
         </div>
     </header>
-    <div class="login-clean">
-        <form method="post" id="login-form">
-            <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><img src="assets\img\login-48.png" alt="Login"></div>
-            <div class="form-group"><input class="form-control" type="username" name="username" placeholder="Username"></div>
-            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div>
-        </form>
-    </div>
-    <div class="register-photo">
-        <div class="form-container">
-            <div class="image-holder"></div>
-            <form method="post" id="register-form">
-                <h2 class="text-center"><strong>Create</strong> a username</h2>
-                <div class="form-group"><input class="form-control" type="username" name="username" placeholder="Username"></div>
-                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-                <div class="form-group"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div>
-                <div class="form-group">
-                    
-                </div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button></div>
-            </form>
-        </div>
+    <br>
+    <div class="container register-photo">
+        <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: blue;"><a href="user-registration-form.php" class="btn btn-primary btn-block" style="background-color: blue;">Register</a></button></div>
+        <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: blue;"><a href="login-form.php" class="btn btn-primary btn-block" style="background-color: blue;">Login</a></button></div>
+
     </div>
     <section id="portfolio" class="portfolio">
         <div class="container">
@@ -73,8 +63,8 @@
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets\img\ace-hearts.png"></a>
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-3x">War</i></div>
+                        </div><img class="img-fluid" src="assets\img\icons8-joe-pineapples-240.png"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
@@ -121,15 +111,16 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <h2 class="text-uppercase text-secondary mb-0">High Card</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cabin.png">
-                                <p class="mb-5"> This game is pretty self explanitory.  Draw a card against the computer and who ever has the high card wins
-                                    that hand.  You're score will be kept just for personal records. Good luck!
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets\img\ace-hearts.png">
+                                <p class="mb-5"> Dealer will display a card.  You can place a bet on if the card is going to be higher or lower than the
+                                    card shown.  **Be warned, if you lose all of your money the game will be over. You can just restart it if you want to
+                                    and it's not real money so go big.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="highCard.html"><i class="fa fa-close"></i>&nbsp;Play Game</a></div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="highCard.html"><i class="fa fa-trophy"></i>&nbsp;Play Game</a></div>
             </div>
         </div>
     </div>
@@ -141,15 +132,14 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cake.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">War</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets\img\icons8-joe-pineapples-240.png">
+                                <p class="mb-5">This is the classic game of War.  Who ever has a higher card wins and it continues until someone has all of the cards and the other is left with NONE!</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="war.html"><i class="fa fa-trophy"></i>&nbsp;Play Game</a></div>
             </div>
         </div>
     </div>
