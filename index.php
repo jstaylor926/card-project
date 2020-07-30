@@ -35,30 +35,30 @@
             <h2 class="font-weight-light mb-0">Web Programming - Summer 2020 - 001 89 7831</h2>
         </div>
     </header>
-    <div class="register-photo">
-        <div class="form-container">
-            <form method="post" id="register-form">
-                <h2 class="text-center"><strong>Create</strong> a username</h2>
-                <div class="form-group"><input class="form-control" type="username" name="username" placeholder="Username"></div>
-                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-                <div class="form-group"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div>
-  
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button></div>
-            </form>
-        </div>
-    </div>
-    <br>
-    <div class="register-photo">
-        <div class="form-container">
+    <div class="login-clean">
         <form method="post" id="login-form">
-            <h2 class="text-center"><strong>Login</strong> Here</h2>
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><img src="assets\img\login-48.png" alt="Login"></div>
             <div class="form-group"><input class="form-control" type="username" name="username" placeholder="Username"></div>
             <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
             <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div>
         </form>
     </div>
-</div>
-
+    <div class="register-photo">
+        <div class="form-container">
+            <div class="image-holder"></div>
+            <form method="post" id="register-form">
+                <h2 class="text-center"><strong>Create</strong> a username</h2>
+                <div class="form-group"><input class="form-control" type="username" name="username" placeholder="Username"></div>
+                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+                <div class="form-group"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div>
+                <div class="form-group">
+                    
+                </div>
+                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button></div>
+            </form>
+        </div>
+    </div>
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="text-uppercase text-center text-secondary">Games</h2>
@@ -122,15 +122,14 @@
                             <div class="col-lg-8 mx-auto">
                                 <h2 class="text-uppercase text-secondary mb-0">High Card</h2>
                                 <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cabin.png">
-                                <p class="mb-5"> Dealer will display a card.  You can place a bet on if the card is going to be higher or lower than the
-                                    card shown.  **Be warned, if you lose all of your money the game will be over. You can just restart it if you want to
-                                    and it's not real money so go big.
+                                <p class="mb-5"> This game is pretty self explanitory.  Draw a card against the computer and who ever has the high card wins
+                                    that hand.  You're score will be kept just for personal records. Good luck!
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="highCard.html"><i class="fa fa-trophy"></i>&nbsp;Play Game</a></div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="highCard.html"><i class="fa fa-close"></i>&nbsp;Play Game</a></div>
             </div>
         </div>
     </div>
@@ -142,15 +141,15 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">War</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets\img\icons8-joe-pineapples-240.png">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cake.png">
                                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
                                     itaque. Nam.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-trophy"></i>&nbsp;Play Game</a></div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
         </div>
     </div>
